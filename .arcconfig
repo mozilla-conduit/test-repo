@@ -1,4 +1,4 @@
 {
-    "phabricator.uri" : "http://phabricator.test",
-    "repository.callsign": "GITTESTREPO"
+    "phabricator.uri" : "https://phabricator-dev.allizom.org",
+    "repository.callsign": "TESTREPOGITHUB"
 }
