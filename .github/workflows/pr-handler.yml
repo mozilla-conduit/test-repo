@@ -13,6 +13,6 @@ jobs:
           GH_REPO: ${{ github.repository }}
           PR: ${{ github.event.pull_request.number }}
           LANDO_BASE_URL: http://lando.test
-          LANDO_REPO: test-repo
+          LANDO_REPO: git-repo
         run: |
           gh pr comment ${{ env.PR }} --body "[View this pull request in Lando](${{ env.LANDO_BASE_URL}}/pulls/${{ env.LANDO_REPO }}/${{ env.PR }}) to land it once approved."
