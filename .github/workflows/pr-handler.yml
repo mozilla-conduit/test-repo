@@ -16,10 +16,10 @@ jobs:
           # Set the following variables at the repository level [0].
           # [0] https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#defining-configuration-variables-for-multiple-workflows
           #
-          #LANDO_BASE_URL:
-          #LANDO_REPO:
+          LANDO_BASE_URL: ${{ vars.LANDO_BASE_URL }}
+          LANDO_REPO: ${{ vars.LANDO_REPO }}
           #
-          # If unset, those will be used to determine sane defaults.
+          # If they are empty, the following will be used to determine sane defaults.
           #
           DEFAULT_LANDO_BASE_URL: https://lando.moz.tools
           GITHUB_REPO: ${{ github.repository }}
