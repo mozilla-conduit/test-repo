@@ -8,6 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    if: ${{ contains(github.event.pull_request.title, 'fail') }}
     steps:
       - name: Run failing test
-        run: false
+        run: sleep 5; false
